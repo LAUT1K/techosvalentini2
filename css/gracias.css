@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+div{
+    text-align: center;
+    padding: 11% ;
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: -webkit-linear-gradient(to right, hsla(221, 100%, 50%, 0.959), hsla(0, 0%, 99%, 0.774)), url(../img/portada.jpeg);
+	background: linear-gradient(to right, hsla(221, 100%, 50%, 0.952), hsla(0, 0%, 100%, 0.774)), url(../img/portada.jpeg);
+	background-size: cover;
+    background-attachment: fixed;
+	background-attachment: fixed;
+}
+
+.contenedor .contenido{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 30px 30px 30;
+}
+
+h1{
+    font-size: 40px;
+    
+}
+h2{
+    font-size: 60px;
+    color: #fff;
+    
+}
+a{
+    text-decoration: none;
+    padding: 5px 8px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 40px
+}
+
+
+/*
+h1,h2{
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    margin: ;
+}
+
+h2{
+    font-size: 60px;
+} */
