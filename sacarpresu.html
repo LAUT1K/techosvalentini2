@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="techos, chapa, metal, es">
-    <link rel="stylesheet" href="css/estilo-presupuesto.css">
+    <link rel="stylesheet" href="css/estilo-presu.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="img/logotv.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Contacto | Techos Valentini</title>
+    <title>Calcular Presupuesto | Techos Valentini</title>
 </head>
 
 <body>
@@ -22,12 +22,13 @@
                     <a href="index.html"><img src="img/logo sin ofnto techosv.webp"></a>
                 </div>
                 <div class="enlaces-header">
-                    <a href="index.html">inicio</a>
+                    <a href="index.html">Inicio</a>
                     <a href="contacto.html">Contacto</a>
                     <a href="servicios.html">Servicios</a>
                     <a href="sobrenosotros.html">Sobre nosotros</a>
-                    <a href="sacarpresu.html">Sacar presupuesto</a>
+                    <a href="sacarpresu.html">Calcular Presupuesto</a>
                 </div>
+                
                 <div class="hamburger" data-aos="fade-left">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -38,9 +39,94 @@
 
         </div>
 
+ <!-- calculadora -->
+
+        <section class="contenedor-calculadora">
+            <form class="contenedor-metros">
+            <div class="metros2">
+            <input for="primerNumero" type="number"  min="0" max="100" id="primerNumero" placeholder="ingrese el largo de su techo"> <br>
+              <input for="segundoNumero" type="number"  min="0" max="100" id="segundoNumero" placeholder="ingrese ancho de su techo"> <br>
+             </div>
+        <br>
+        
+        <center>
+            <div class="cont-botones">
+                <input type="button" onclick="Chapa()" value="Chapa">
+                <input type="button" onclick="Policarbonato()" value="Policarbonato">
+                <input type="button" onclick="Escondido()" value="Escondido">
+                <input type="button" onclick="Deck()" value="Deck">
+            </div>
+        </center>
+                <br>
+            </form>
+            <center>
+                <div class="resultado-techo">
+                     <p >El costo de su techo  
+                        <span id="resultado"></span>
+                        </p>
+                </div>
+            </center>
+        
+        <br>
+            <p>Agregados de su techo:</p>
+
+
+
+        <form >
+
+            <div class="cont-botones-aregados">
+            <input type="button" onclick="CanaletaL()" value="Canaleta en Largo"><span id="resultado2"></span>
+            <input type="button" onclick="CanaletaA()" value="Canaleta en Ancho"><span id="resultado3"></span>
+            <input type="button" onclick="BabetaL()" value="Babeta en Largo"><span id="resultado4"></span>
+            <input type="button" onclick="BabetaA()" value="Babeta en Ancho"><span id="resultado5"></span>
+        
+            <input type="button" onclick="CanaletaYbabetaL()" value="Con canaleta + babeta en el largo de tu techo"><span id="resultado6"></span> 
+            <input type="button" onclick="CanaletaYbabetaA()" value=" Con canaleta + babeta en el ancho de tu techo"><span id="resultado7"></span>
+            </div>
+            
+        </form>
+
+
+
+    <!-- <div class="cont-resultado-agregado">
+        <p>Esto cuesta tu agregado :<br>
+            <span id="resultado2"></span>
+        </p>
+        
+        <p>Esto cuesta tu agregado :<br>
+            <span id="resultado3"></span>
+        </p>
+        
+        <p>Esto cuesta tu agregado :<br>
+            <span id="resultado4"></span>
+        </p>
+        
+        <p>Esto cuesta tu agregado :<br>
+            <span id="resultado5"></span>
+        </p>
+        
+        <p>Esto cuesta tu agregado :<br>
+            <span id="resultado6"></span>
+        </p>
+        
+        <p>Esto cuesta tu agregado :<br>
+            <span id="resultado7"></span>
+        </p>
+    </div> -->
+        <!-- <form>
+            <input type="button" onclick="PrecioFinal()" value="Calcula el precio final"> 
+        </form> -->
+        
+        <!-- <p>Esto cuesta tu techo final :<br>
+            <span id="resultado3"></span>
+        </p> -->
+        </section>
+
+
+
+
+
     </header>
-
-
     
         <!-- FOOTER -->
         
@@ -59,8 +145,7 @@
         <div class="social-media">
             <h4>Redes sociales</h4>
             <a href="https://www.facebook.com/techos.valentini.7" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=5491139535064" target="_blank"><i
-                    class="fab fa-whatsapp"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5491139535064" target="_blank"><i class="fab fa-whatsapp"></i></a>
             <a href="mailto:techosvalentini@gmail.com" target="_blank"><i class="fas fa-envelope"></i><a>
                     <a href="https://www.instagram.com/techosvalentini/" target="_blank"><i
                             class="fab fa-instagram"></i></a>
@@ -69,7 +154,7 @@
     </footer>
     <div class="texto-final" >
         <hr>
-        <p>&copy;TechosValentini All rights reserved |  Web site developed by <span>Lautaro Valentini</span> </p>
+        <p>&copy;TechosValentini All rights reserved |  Web site developed by <span>LAUT1K</span> </p>
         
     </div>
 

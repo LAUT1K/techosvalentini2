@@ -38,7 +38,7 @@ body{
 .linea{
     width: 6px;
     height: 95px;
-    background: rgba(255, 255, 255, 0);
+    background: rgb(255, 255, 255);
     margin: 0px 3px;
     border-radius: 4px;
     animation: Loader 1s infinite;
@@ -161,11 +161,21 @@ nav{
     transition: ease-in-out 0.5s;
 }
 
+
 .nav .enlaces-header a{
     color: #5D6678;
     text-decoration: none;
     margin-left: 20px;
+    border-bottom: 2px solid #108efc25;
+    transition: .5s;
 }
+
+.nav .enlaces-header a:hover{
+    border-bottom: 2px solid #108efc;
+    font-size: 16.8px;
+    transition: .5s;
+}
+
 
 
 

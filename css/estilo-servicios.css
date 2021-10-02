@@ -97,14 +97,23 @@ nav{
 }
 
 .enlaces-header{
-    font-weight: 300;
+    font-weight: 400;
     transition: ease-in-out 0.5s;
 }
+
 
 .nav .enlaces-header a{
     color: #5D6678;
     text-decoration: none;
     margin-left: 20px;
+    border-bottom: 2px solid #108efc25;
+    transition: .5s;
+}
+
+.nav .enlaces-header a:hover{
+    border-bottom: 2px solid #108efc;
+    font-size: 16.8px;
+    transition: .5s;
 }
 
 .hamburger{
@@ -311,6 +320,7 @@ nav{
 .textos-question p{
     font-weight: 300;
     margin-top: 14px;
+    font-size: 17px;
     color: #ffffff;
 }
 

@@ -8,12 +8,208 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #f2f2f2;
     font-size: 16px;
+} 
+p{
+    color: rgb(255, 255, 255);
+}
+label{
+    color: #fff;
 }
 
 a{
     text-decoration: none;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.contenedor-calculadora{
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    margin: 50px auto;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.metros2 label{
+    padding-top:17px;
+}
+
+
+.metros2 input[type="number"],
+.metros2 textarea{
+    width: 183px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    border: 1px solid rgba(153, 153, 153, 0);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    outline: 0; 
+    background-color: rgba(58, 58, 58, 0.521);
+    -webkit-appearance: none;
+    justify-content: center;
+}
+
+.metros2{
+    background: #f2f2f200;
+    padding: 10px 0px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+}
+
+
+
+.resultado-techo p{
+    display: inline-block;
+    background: #0da6cc88;
+    text-align: center;
+    color: #fff;
+    padding: 12px 40px;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.46);
+}
+
+.resultado-techo span{
+    font-weight: 800;
+    color: #ffffff;
+
+}
+
+.cont-botones-aregados i{
+    color: #fff;
+}
+
+.cont-botones-aregados span{
+    color: #fff;
+    display: inline;
+}
+
+.cont-botones-aregados input{
+    display: grid;
+    grid-template-columns: 300px 400px;
+    background: #14abec00;
+    text-align: center;
+    border: none;
+    color: #fff;
+    padding: 6px 0px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 32px rgba(20, 171, 236, 0);
+    transition: .5s;
+}
+
+
+.cont-botones-aregados input:hover{
+    display: grid;
+    grid-template-columns: 300px 400px;
+    background: rgba(20, 171, 236, 0.515);
+    text-align: center;
+    border: none;
+    color: #fff;
+    padding: 6px 0px;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 32px rgba(20, 171, 236, 0.76);
+    transition: .5s;
+}
+
+
+.logo-wsp-nav{
+        text-decoration: none;
+}
+
+.cont-resultado-agregado{
+    background-color: #4640408c;
+    padding: 20px 15px;
+    margin-top: 15px;
+}
+ 
+.contenedor-agregados{
+    border: none;
+    margin: 28px 50px 0px 0px;
+    width: 150px;
+    display: inline-block;
+    background: #14abec00;
+    text-align: center;
+    color: #fff;
+    padding: 12px 4px;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.cont-botones input{
+    border: none;
+    margin: 28px 50px 0px 0px;
+    width: 150px;
+    display: inline-block;
+    background: #14abec00;
+    text-align: center;
+    color: #fff;
+    padding: 12px 4px;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.cont-botones input:hover{
+    /* background-color: #1a9ddc;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-left: 40px;
+    border-radius: 9px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 5px 8px;
+    border-color: none; */
+    border: none;
+    margin: 28px 45px 0px 0px;
+    width: 150px;
+    display: inline-block;
+    background: rgba(20, 171, 236, 0.515);
+    text-align: center;
+    color: #fff;
+    padding: 12px 4px;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: .5s;
+    border-radius: 5px;
+    box-shadow: 0px 0px 32px rgba(20, 171, 236, 0.815);
+}
 
 
 h1, h2, h3, h4, h5, h6{
@@ -194,8 +390,8 @@ header{
 	width: 100%;
 	height: 615px;
 	background: #f3f3f3;
-	background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(219, 11%, 24%, 0)), url(../img/img4.jpg);
-	background: linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(219, 11%, 24%, 0)), url(../img/img4.jpg);
+	background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(219, 11%, 24%, 0)), url(../img/portada-techo-poli.jpg);
+	background: linear-gradient(to right, hsl(0, 0%, 0%), hsla(219, 11%, 24%, 0)), url(../img/portada-techo-poli.jpg);
 	background-size: cover;
     background-attachment: fixed;
 	background-attachment: fixed;
@@ -345,6 +541,7 @@ footer{
     margin: 0px 10px;
     padding: 20px;
     font-weight: 500;
+    color: black;
 }
 
 .texto-final span{
